@@ -77,7 +77,7 @@ public static Var getPixKey(@ParamMetaData(description = "clientID") Var clientI
    public Var call() throws Exception {
 
     authRequest =
-    blockly.Pagamento.getAccessToken(clientID, clientSecret);
+    getAccessToken(clientID, clientSecret);
 
     authData =
     cronapi.json.Operations.toJson(
